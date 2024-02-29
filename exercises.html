@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EXERCISES</title>
+    <style>
+        div {
+            border: 1px solid burlywood;
+            width: 280px;
+            height: 120px;
+            margin-top: 20px;
+        }
+        div > button {
+            padding: 20px;
+        }
+        button {
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        h1 {
+            font-size: 17px;
+            font-weight: 3px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button>9a</button>
+    <button class='js-button-9b'>9b</button>
+    <div>
+        <button class="js-heads" onclick="choice('heads')">heads</button>
+        <button class="js-tails" onclick="choice('tails')">tails</button>
+        <p class="js-choice" onclick="choice()">take your choice</p>
+    </div><br>
+    <input class="js-input-value" placeholder="name" onkeydown=" keyhandle(event)">
+    <input type="submit" name="submit" class="js-input-button" onclick="submit()">
+    <p class="js-submit-value"></p>
+
+    
+    <script>
+        const buttonElement = document.querySelector('button');      
+        console.log(buttonElement);
+        const secondButton = document.querySelector('.js-button-9b');
+        secondButton.innerHTML = '9b done';
+        console.log(secondButton);
+
+        function choice(chosenOption) {
+            if (chosenOption === 'heads') {
+                document.querySelector('.js-choice').innerHTML = 'You chose: heads';
+            } else if (chosenOption === 'tails') {
+                document.querySelector('.js-choice').innerHTML = 'You chose: tails';
+            } else {
+                console.log('Click on one button');
+            }
+        }
+        function keyhandle(event) {
+            if (event.key === 'Enter') {
+                submit() ;
+                
+            }
+        }
+
+
+
+        function submit() {
+            let inputValue = document.querySelector('.js-input-value');
+            const name = inputValue.value;
+            document.querySelector('.js-submit-value').innerHTML= ` your name is: ${name}`;
+            
+        }
+    </script>
+</body>
+</html>

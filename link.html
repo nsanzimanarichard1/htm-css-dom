@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my page link</title>
+        <style>
+            button{
+                background-color:royalblue;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body><p>
+        this is my paragaraph where you can type what you want to enter here
+        class SpeakerListView(ListView):
+    model = Speaker
+    template_name = 'speakers/speaker_list.html'
+    context_object_name = 'speakers'
+
+class SpeakerDetailView(DetailView):
+    model = Speaker
+    template_name = 'speakers/speaker_detail.html'
+    context_object_name = 'speaker'
+
+class SpeakerCreateView(CreateView):
+    model = Speaker
+    template_name = 'speakers/speaker_create.html'
+    fields = ['name', 'bio', 'contact_info', 'areas_of_expertise']
+
+class SpeakerUpdateView(UpdateView):
+    </p>
+       <center> <a href="table.html"> <button>click here</button> </a></center>
+      </body>
+</html>

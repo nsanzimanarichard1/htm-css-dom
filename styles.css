@@ -1,0 +1,75 @@
+body{
+  background-color:rgba(58, 58, 158, 0.8);
+  margin:auto;
+  padding:auto;
+  box-sizing: border-box;
+  min-height:100vh;
+}
+#title{
+  text-align:center;
+  color:white;
+
+}
+#description{
+  color:#dff1f1;
+  text-align:center;
+  font-size:18px;
+}
+.conntainer{
+  margin:auto;
+  width:500px;
+  max-width:90%;
+  background-color:rgb(39, 43, 39);
+  align-content:center;
+}
+#survey-form{
+  margin:67px 67px;
+  padding-top:20px;
+  border:2px rgb(248, 245, 245) solid;
+  background-color:rgba(17, 17, 20, 0.8)
+  
+  
+  }
+  label{
+    color:white;
+    display:block;
+
+
+  }
+  
+  h1,h2{
+    color:white;
+  }
+  #name{
+    padding-left:10px;
+margin-left:20px;
+width:80%;
+align-content:center;
+  }
+  #email{
+padding-left:10px;
+margin-left:20px;
+width:80%;
+align-content:center;
+  }
+  #number{
+    padding-left:10px;
+margin-left:20px;
+width:80%;
+align-content:center;
+  }
+  #name-label{
+    margin-left:20px;
+  }
+  #email-label{
+    margin-left:20px;
+  }
+  #number-label{
+    margin-left:20px;
+  }
+  #dropdown{
+    margin-left:20px;
+    width:80%;
+    height:22px;
+
+  }
